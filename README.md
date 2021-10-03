@@ -72,8 +72,8 @@ For your PR to count it must be:
 
 ## Rules To Contribute To This Repo
 
+- You can also add a front-end website template. (These PR's will be given more preference)
 - You can write solutions in C/C++/Java/Python/JS for Data Structure and Algorithms.
-- Or You can also add a front-end website template.
 - Follow file naming convention for all your pull requests.
 - While adding any content it should be inside its appropiate directory
 - if there is any problem with inaccurate solution create an issue!
@@ -81,8 +81,8 @@ For your PR to count it must be:
 
 ## Things you can contribute to
 
+- Contribute adding front-end website templates (More preference will be given to PR's of front end webiste templates)
 - Repo contain folders of all the data structures and algorithms topic. You can **add a solution** to a question ( present in the readme of particular topic folder) that is unanswered.
-- Contribute adding front-end website templates
 - you can **update existing solution** with a better one ( better complexity).
 - Participants can even **add new questions** and solutions of their interest.
 - **solve issues** raised by other people or yourself.
