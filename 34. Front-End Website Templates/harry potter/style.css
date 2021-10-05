@@ -1,0 +1,274 @@
+
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(240_F_25153486_YgrJywWTDTxYkpI54l5d5wj9Ty8hr04F.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Harry Potter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    overflow: hidden;
+    margin:0; 
+    cursor: url(snitch2.gif), default;
+}
+
+.container{
+    position: relative;
+    background-image: url(scroll.png);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5px;
+    height: 630px;
+    width: 430px;
+    transition: transform .2s ease-in;
+    cursor: url(wand.png),default ;   
+}
+.logos{
+    background-image: url(logo.png);
+    position: relative;
+    height: 180px;
+    width: 250px;
+    top: 5px;
+    left: 53px;
+}
+.text{
+    position: relative;
+    top: 285px;
+    left: 56px;
+    font-size:31px;
+    text-shadow: 5px 5px 5px rgb(84, 55, 0);
+
+}
+.btn{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom:275px;
+    left: 25px;
+    width: 380px;
+    margin:0;
+    top: 15px;
+    cursor: url(wand.png),default ;
+
+}
+.right{
+    position: relative;
+    left: 100px;
+    background: transparent;
+    border:none;
+    font-size: 50px;
+    font-weight: bold;
+    top: 50px;
+    text-shadow: 3px 3px 3px rgb(84, 55, 0);
+}
+.wrong{
+    position: relative;
+    right: -0px;
+    background: transparent;
+    border:none;
+    font-size: 60px;
+    top: 50px;
+    left: 150px;
+    font-weight: lighter;
+    text-shadow: 3px 3px 3px rgb(84, 55, 0);
+}
+.right:focus{
+    outline:none;
+    cursor: url(wand.png),default ;
+
+}
+.wrong:focus{
+    outline:none;
+    cursor: url(wand.png),default ;
+
+}
+.right:hover{
+    transform:scale(.85);
+    cursor: url(wand.png),default ;
+
+}
+.wrong:hover{
+    transform:scale(.85);
+    cursor: url(wand.png),default ;
+
+}
+.container:hover{
+    transform:scale(1.02);
+}
+a,a:hover,a:visited{
+    text-decoration:none;
+    color: black;
+    cursor: url(wand.png),default ;
+    
+}
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    cursor: url(wand.png),default ;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.inactive{
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+
+.words {
+  position: absolute;
+  color: #584300;
+  font-size: 0;
+  line-height: 1.5;
+  opacity: 1;
+}
+
+.words span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+#word-1{
+    transform: translateY(-100px);
+}
+#word-2{
+    transform: translateY(0px);
+}
+#word-3{
+    transform: translateY(100px);
+}
+
+.continu{
+    position: absolute;
+    color: #584300;
+    bottom: 70px;
+    right: 150px;
+    border: none;
+    font-family: 'Harry Potter', sans-serif;
+    background-color: transparent;
+    font-size: 40px;
+    opacity: 0;
+}
+
+.show-continue{
+    position: absolute;
+    color: #584300;
+    bottom: 70px;
+    right: 150px;
+    border: none;
+    font-family: 'Harry Potter', sans-serif;
+    background-color: transparent;
+    font-size: 40px;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.show-continue:hover{
+    transform: scale(1.5);
+    cursor: url(wand.png),default
+}
+
+b{
+    font-size: 50px;
+}
