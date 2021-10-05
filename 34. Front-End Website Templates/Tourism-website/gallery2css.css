@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/city.jpg");
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  box-shadow: 0 0 16px #333;
+  transition: all 0.5s ease;
+}
+.gallery__img:hover {
+    z-index :1;
+    transform: scale(2);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+        
+
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.heaad {
+    font-style: uppercase;
+}
+ul{
+ float: right;
+ list-style-type: none;
+}
+
+ul li{
+ display: block;
+}
+
+ul li a{
+background: linear-gradient(to right,#766da6,#1b1638,#0c0a17);
+ text-decoration: none;
+ color: #fff;
+ padding: 5px 20px;
+ border: 2px solid #fff;
+ transition: all 0.6s ease;
+}
+
+ul li a:hover{
+ color: #fff;
+ z-index :1;
+ transform: scale(2);
+ box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+
+@media (max-width: 1028px){
+.btn{
+	visibility : hidden;
+}
+h1 {
+ font-size: 2.5rem;
+ 
+}
+.gallery {
+	display: block;
+}
+.gallery__img {
+	margin-top: 2%;
+}
+
+}
