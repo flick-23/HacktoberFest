@@ -1,0 +1,453 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"); */
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: lighter;    letter-spacing: 5px;
+    box-sizing: border-box;
+    cursor: url(wand.png), default;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    overflow-x: hidden;
+    background-color: black;
+    /* cursor: url(snitch2.gif), default; */
+}
+  .back_bg{
+    overflow: hidden;
+    background-image: url(bgscroll1.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+  
+  
+  
+  header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(hogwarts_castle.png);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  width: 100%;
+  transition: all 0.3s ease-in;
+  z-index: 1;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 40px;;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar a.active {
+  background-color: #a4c1b61f;
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: black;
+}
+
+.logo h1{
+    float: left;
+    width: 400px;
+    height: auto;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    margin-left: 40px;;
+}
+
+.main{
+    max-width: 100%;
+    margin: auto;
+}
+ 
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title img{
+    width: 300px;
+    height: auto;
+    /* font-size: 70px; */
+    color: #fff; 
+}
+
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(0, 0, 0, 0.2)), url(bgscroll1.png);
+    background-size: cover;
+    color: #6e0f0f;
+    font-size: 10px;
+    margin: 25px;
+    margin-right: 100px;
+    padding: 30px 30px;
+    width: 40vw;
+    /* borde4r: 2px solid #202020; */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 6px 6px #202020;
+    /* margin-right: 20px; */
+    /* margin-left: 100px; */
+    
+}
+.about-section{
+  /* display: inline-flex; */
+  /* position: relative; */
+  /* display: inline-block; */
+  width: 100%;
+}
+
+.about h1{
+    font-size: 40px;
+}
+
+.jk{
+  
+  /* background-size: cover;
+  background-position: center; */
+  height: 40vh;
+  width: 20vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+/* float: right; */
+/* margin-left: 100px; */
+}
+.jkvid{
+  height: 40vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.about_data{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: lighter;
+  letter-spacing:1.2px;
+  line-height: 1.5;
+  font-size: 15px; 
+  color: rgb(0, 0, 0);
+}
+
+.bgimage{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(hogwartsnight.jpg);
+  height: 20vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+ 
+}
+.b-title{
+  display: flex;
+  color: #6e0f0f;
+  padding: 50px;
+  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 0;
+}
+.container-flex{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+  /* justify-content: center; */
+}
+
+.container-flex img{
+  border-radius: 5% 5% 5% 5%;
+  height: 41vh;
+  width: auto;
+}
+.container-flex-one{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.container-flex-two{
+  margin-top: 50px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.1); 
+}
+.cast-container{
+  /* margin-left: 100px;
+  margin-right: 50px; */
+  margin: 20px 50px;
+  
+  display:flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 100vw;
+  align-items: center;
+  /* justify-content: center; */
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.cast-container-one{
+  /* margin-left: 100px;
+  margin-right: 50px; */
+  margin: 20px 50px;
+  
+  display:flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 0px;
+  /* margin-left: 0px; */
+}
+
+.cast-container-one video{
+  /* border-radius: 30%; */
+  height: 17vh;
+  width: auto;
+  align-items: center;
+  border-radius: 50%;
+}
+.cast-container-one div{
+  height: 17vh;
+  width: 17vw;
+  align-items: center;
+  border-radius: 50%;
+}
+.cast-container video{
+  /* border-radius: 30%; */
+  height: 20vh;
+  width: auto;
+  align-items: center;
+  border-radius: 50%;
+}
+.cast-container div{
+  height: 20vh;
+  width: 20vw;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.titlecast{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 100px;
+  margin-top: 40px;
+  color: #6e0f0f;
+}
+
+.m-title{
+  display: flex;
+  color: #6e0f0f;
+  padding: 50px;
+  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+.container-flex-movies{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.container-flex-movies-one{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.container-flex-movies-two{
+  margin-top: 50px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.container-flex-movies img{
+  border-radius: 5% 5% 5% 5%;
+  height: 41vh;
+  width: auto;
+  box-shadow: 6px 6px 6px 10px rgba(30, 30, 30, 0.421); 
+}
+
+.footer {
+  display: flex;
+  padding: 10px 20px;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  text-align: center;
+  align-items: center;
+}
+
+.developer{
+  font-size: 8px;
+  font-family : 'Poppins','serif';
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffffb9;
+}
+
+.harsh{
+  width: 50vw;
+  display: flex;
+  margin: 0px 150px;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  /* margin-top: 20px; */
+}
+.harsh i{
+  /* height: 7vh; */
+  font-size: 25px;
+  /* width: auto; */
+  color: #ffffffb9;
+
+  transition: all 0.1s ease;
+}
+.kunal{
+  width: 50vw;
+  margin: 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-top: 20px; */
+}
+.kunal i{
+  /* height: 7vh; */
+  font-size: 25px;
+  /* width: auto; */
+  color: #ffffffb9;
+
+  transition: all 0.1s ease;
+}
+
+.kunal i:hover ,.harsh i:hover{
+  font-size: 35px;
+  color: #fff;
+  transition: all 0.1s ease;
+}
+.endvid{
+  height: auto;
+  width: 100vw;
+  background-attachment: fixed;
+}
+.endvid h1{
+  position: absolute;
+  color: white;
+  top: 4200px;
+  left: 26vw;
+  font-size: 100px;
+}
