@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="contactcss.css">
+
+</head>
+<body>
+	
+
+	<div class="container">
+	  <ul>
+         <li><a href="index.html" class="home">HOME</a></li>
+ 	</ul>
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="India">India</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>   
+
+  </form>
+
+</div>
+<button class="submit" onclick="alert('Thank you for contacting us.have a great day ahead.')">Submit</button>
+</body>
+</html>
