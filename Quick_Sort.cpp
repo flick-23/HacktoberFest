@@ -1,20 +1,23 @@
 #include<iostream>
 using namespace std;
+//Swap function to swap the values stored in two variable
 void swap(int *a,int *b)
 {
     int temp=*a;
     *a=*b;
     *b=temp;
 }
-int part(int a[],int lb,int ub,int n)
+//This partition function puts the numbers smaller than the pivot element to the right
+//and the greater number to the left
+int partition(int a[],int lb,int ub,int n)
 {
-    int p=a[lb],start = lb+1,end=ub;
+    int pivot=a[lb],start = lb+1,end=ub;
     do
     {
-        while(a[start]<=p )
+        while(a[start]<=pivot)
         start++;
 
-        while(a[end]>p)
+        while(a[end]>pivot)
         end--;
 
         if(start<end)
@@ -29,7 +32,7 @@ void quicksort(int a[],int lb,int ub,int n)
 {
     if(lb<ub)
     {  
-        int l=part(a,lb,ub,n);
+        int l=partition(a,lb,ub,n);
         quicksort(a,lb,l-1,n);
         quicksort(a,l+1,ub,n);
     }
